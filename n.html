@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Example</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="icon" type="image/x-icon" href="—Pngtree—letter v logo vector_4782858.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Feather Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/feather-icons/dist/feather.css">
+    <style>
+        .vimeo-icon {
+            margin-right: 5px; /* Adjust the margin as needed */
+        }
+        /* Additional CSS for responsiveness */
+        .navbar-brand {
+            white-space: nowrap; /* Prevent the brand text from wrapping */
+        }
+        .search-bar-container {
+            width: 100%; /* Ensure the search bar container spans the entire width */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Bootstrap 5 Navbar Brand -->
+        <a class="navbar-brand" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vimeo vimeo-icon" viewBox="0 0 16 16">
+                <path d="M15.992 4.204q-.106 2.334-3.262 6.393-3.263 4.243-5.522 4.243-1.4 0-2.367-2.583L3.55 7.523Q2.83 4.939 2.007 4.94q-.178.001-1.254.754L0 4.724a210 210 0 0 0 2.334-2.081q1.581-1.364 2.373-1.437 1.865-.185 2.298 2.553.466 2.952.646 3.666.54 2.447 1.186 2.445.5 0 1.508-1.587 1.006-1.587 1.077-2.415.144-1.37-1.077-1.37a3 3 0 0 0-1.185.261q1.183-3.86 4.508-3.756 2.466.075 2.324 3.2z"/>
+            </svg>
+            VigilanceWatch
+        </a>
+        <!-- Bootstrap 5 Navbar Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Bootstrap 5 Navbar Collapse Content -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggleExternalContent"> <!-- Added justify-content-end class -->
+            <!-- Search Bar -->
+            <div class="search-bar-container"> <!-- Added class for search bar container -->
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Bootstrap 4 Display Cover -->
+<div class="display-cover">
+    <video autoplay></video>
+    <canvas class="d-none"></canvas>
+    <!-- Video Options -->
+    <div class="video-options">
+        <select name="" id="" class="custom-select">
+            <option value="">Select camera</option>
+        </select>
+    </div>
+    <!-- Screenshot Image -->
+    <img class="screenshot-image d-none" alt="">
+    <!-- Controls -->
+    <div class="controls">
+        <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
+        <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
+        <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
+    </div>
+</div>
+
+<!-- Feather Icons Script -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="script.js"></script>
+<!-- Bootstrap 5 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
